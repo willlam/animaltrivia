@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalTrivia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +27,191 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="platypus" translatesAutoresizingMaskIntoConstraints="NO" id="2ls-3d-NUB">
+                                <rect key="frame" x="20" y="90" width="254" height="254"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A platypus is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-RH-UtE">
+                                <rect key="frame" x="49" y="36" width="196" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.95326967592592593" green="0.74781904355367013" blue="0.074979652660683585" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An Australian hedgehog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUk-tl-C7r">
+                                <rect key="frame" x="63" y="387" width="279" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A furry animal which lays eggs, has a duck's bill, and is poisonous" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-DQ-eH0">
+                                <rect key="frame" x="65" y="462" width="274" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There is no such beast!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxw-So-jl3">
+                                <rect key="frame" x="63" y="430" width="262" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrZ-e8-hsm" userLabel="A">
+                                <rect key="frame" x="20" y="392" width="30" height="30"/>
+                                <state key="normal" image="A"/>
+                                <connections>
+                                    <action selector="aButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RwR-82-WZK"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-vt-pVV" userLabel="IncorrectAnswer">
+                                <rect key="frame" x="20" y="392" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3g-n2-Dpg" userLabel="B">
+                                <rect key="frame" x="20" y="435" width="30" height="30"/>
+                                <state key="normal" image="B"/>
+                                <connections>
+                                    <action selector="bButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKA-Jh-xv5"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ei-WU-PdB" userLabel="IncorrectAnswer">
+                                <rect key="frame" x="20" y="435" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sql-KR-zHs" userLabel="C">
+                                <rect key="frame" x="20" y="480" width="30" height="30"/>
+                                <state key="normal" image="C"/>
+                                <connections>
+                                    <action selector="cButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vas-aG-jSf"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="onn-rf-foI" userLabel="CorrectAnswer">
+                                <rect key="frame" x="20" y="480" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYx-lQ-xOo" userLabel="Next">
+                                <rect key="frame" x="17" y="529" width="322" height="63"/>
+                                <state key="normal" image="nextButton_NEW"/>
+                                <connections>
+                                    <segue destination="ets-GJ-BRz" kind="show" id="7JS-vo-BhY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49019607843137253" green="0.4392156862745098" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="aButton" destination="XrZ-e8-hsm" id="Jd3-28-zHE"/>
+                        <outlet property="aLabel" destination="OUk-tl-C7r" id="qWc-Rp-GfP"/>
+                        <outlet property="bButton" destination="i3g-n2-Dpg" id="PAp-UO-yfP"/>
+                        <outlet property="bLabel" destination="kxw-So-jl3" id="NHH-4b-hsg"/>
+                        <outlet property="cButton" destination="sql-KR-zHs" id="Xjb-ql-07z"/>
+                        <outlet property="cLabel" destination="1hF-DQ-eH0" id="MmJ-Uz-Yqz"/>
+                        <outlet property="correctCImageView" destination="onn-rf-foI" id="vnJ-9d-3De"/>
+                        <outlet property="incorrectAImageView" destination="gVc-vt-pVV" id="fWY-6G-Sj6"/>
+                        <outlet property="incorrectBImageView" destination="9Ei-WU-PdB" id="nhy-er-FQf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="375"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="kds-SH-F3T">
+            <objects>
+                <viewController id="ets-GJ-BRz" customClass="SecondViewController" customModule="AnimalTrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xqn-ED-gfC"/>
+                        <viewControllerLayoutGuide type="bottom" id="50H-e7-lKz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f63-ez-96Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do polar bears eat penguins?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8J-vK-WyC" customClass="SecondView">
+                                <rect key="frame" x="20" y="20" width="356" height="35"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.9532696759" green="0.74781904359999996" blue="0.074979652660000007" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="polarBear" translatesAutoresizingMaskIntoConstraints="NO" id="4Jc-Wz-Kh6">
+                                <rect key="frame" x="71" y="69" width="254" height="254"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KG1-Ks-ISd" userLabel="A">
+                                <rect key="frame" x="20" y="342" width="30" height="30"/>
+                                <state key="normal" image="A"/>
+                                <connections>
+                                    <action selector="aButtonPressed:" destination="ets-GJ-BRz" eventType="touchUpInside" id="H5l-mU-hzr"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="incorrectAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="QnP-Xd-Wuh">
+                                <rect key="frame" x="20" y="343" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCX-I4-nZl" userLabel="B">
+                                <rect key="frame" x="20" y="415" width="30" height="30"/>
+                                <state key="normal" image="B"/>
+                                <connections>
+                                    <action selector="bButtonPressed:" destination="ets-GJ-BRz" eventType="touchUpInside" id="X9N-OY-1jG"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="incorrectAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="NkN-fG-EbS" userLabel="correctAnswer">
+                                <rect key="frame" x="20" y="480" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajg-m3-Vrs" userLabel="C">
+                                <rect key="frame" x="20" y="484" width="30" height="30"/>
+                                <state key="normal" image="C"/>
+                                <connections>
+                                    <action selector="cButtonPressed:" destination="ets-GJ-BRz" eventType="touchUpInside" id="ady-Lu-HxC"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correctAnswer" translatesAutoresizingMaskIntoConstraints="NO" id="2ON-CB-gvd" userLabel="inCorrect CImage View">
+                                <rect key="frame" x="20" y="415" width="30" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No, it's bad for their figure" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbx-RK-cLU" userLabel="A Label">
+                                <rect key="frame" x="58" y="339" width="323" height="37"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No, they live in opposite poles of the planet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="g2B-0a-VKM" userLabel="B Label">
+                                <rect key="frame" x="58" y="393" width="323" height="74"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes, it's their favorite snack" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYC-gi-cTS" userLabel="C Label">
+                                <rect key="frame" x="58" y="480" width="364" height="39"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFd-jt-6Jt" userLabel="Next Button">
+                                <rect key="frame" x="28" y="522" width="370" height="63"/>
+                                <state key="normal" image="nextButton_NEW"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="aButton" destination="KG1-Ks-ISd" id="ZC8-TO-2Ee"/>
+                        <outlet property="aLabel" destination="tbx-RK-cLU" id="DbW-5m-T08"/>
+                        <outlet property="bButton" destination="tCX-I4-nZl" id="ZAS-3j-KcL"/>
+                        <outlet property="bLabel" destination="g2B-0a-VKM" id="0Db-DL-uqS"/>
+                        <outlet property="cButton" destination="Ajg-m3-Vrs" id="WWC-y9-F5d"/>
+                        <outlet property="cLabel" destination="nYC-gi-cTS" id="P5r-5H-OUI"/>
+                        <outlet property="correctAnswerImageView" destination="NkN-fG-EbS" id="aak-zQ-k9d"/>
+                        <outlet property="inCorrectCImageView" destination="2ON-CB-gvd" id="pup-WT-gwp"/>
+                        <outlet property="incorrectAImageView" destination="QnP-Xd-Wuh" id="qSW-8Y-Cdy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gh5-ru-cjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="A" width="30" height="30"/>
+        <image name="B" width="30" height="30"/>
+        <image name="C" width="30" height="30"/>
+        <image name="correctAnswer" width="30" height="30"/>
+        <image name="incorrectAnswer" width="30" height="30"/>
+        <image name="nextButton_NEW" width="370" height="63"/>
+        <image name="platypus" width="254" height="254"/>
+        <image name="polarBear" width="254" height="254"/>
+    </resources>
 </document>
